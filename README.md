@@ -6,9 +6,9 @@ This is illustrated in a simple simulation. I fit a random forest using 5 comple
 
 This ‘cardinality bias’ has been known in the literature since at least 2007, but I was unaware of any publication or case studies relating this bias to model accuracy. Here I developed several simulations to test the effect of cardinality bias on model accuracy under different conditions. I simulated perfect and weak correlations between the predictors and response, with no noise or with considerable noise.
 
-I found that for all simulations, model accuracy depended on the strength of the association between the response and the meaningful factor(s), even when bias was present. I suspect this has something to do with the regularizing properties of the bagging process; in other words, the ensemble smoothed out the bias in the individual trees.
+I found that for each simulation, model accuracy depended on the strength of the association between the response and the meaningful factor(s), even when bias was observed. I suspect this has something to do with the regularizing properties of the bagging process. That is, the ensemble must smooth out the bias in the individual trees.
 
-In conclusion, I was unable to produce a situation in which cardinality bias negatively impacted model accuracy. At the same time, I found many cases of cardinality bias in variable importance measures. Variable importance measures for factors have clear limitations.
+In conclusion, cardinality bias does not seem to impact model accuracy. At the same time, I found many cases of cardinality bias in variable importance measures. Variable importance measures for factors have clear limitations.
 
 Citations:
 
