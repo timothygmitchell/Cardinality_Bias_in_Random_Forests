@@ -4,7 +4,7 @@ Strobl *et al*. (2007) report bias in variable importance measures for random fo
 
 This is illustrated in a simple simulation. Here I fit a random forest using 5 completely random predictors of increasing cardinality. While none of the predictors is useful at all for prediction, variable importance measures are highest for predictors with more factor levels!
 
-This bias is concerning. But does it also affect accuracy? I am not aware of any systematic investigations into the matter. Here I developed several simulations to study cardinality bias under different conditions. Conditions include perfect and weak correspondence between the predictors and the response, with no noise and with considerable noise.
+This bias is concerning. But does it also affect accuracy? I am not aware of any systematic investigations into the matter. I developed several simulations to study cardinality bias under different conditions. Conditions include perfect and weak correspondence between the predictors and the response, with no noise and with considerable noise.
 
 I find that while variable importance measures using Gini impurity are highly sensitive to cardinality bias, random forests are effective at selecting meaningful factors in the presence of real associations. This is a welcome finding, and I suspect it has to do with the regularizing properties of the ensemble. Cardinality bias calls into question the widespread use of variable importance measures for interpreting the model, but I am unable to find any decreases in accuracy.
 
