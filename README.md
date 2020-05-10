@@ -1,6 +1,6 @@
 # Cardinality_Bias_in_Random_Forests
 
-Strobl *et al*. (2007) report bias in variable importance measures for random forests: namely, decision trees are more likely to select factors (categorical variables) with more factor levels, even when the factors are equally important. As a consequence, factors with more factor levels (cardinality) tend to have higher variable importance measures.
+Strobl *et al*. (2007) report bias in variable importance measures for random forests: namely, decision trees are more likely to select factors with more factor levels, even when the factors are equally important. As a consequence, factors with more factor levels (cardinality) tend to have higher variable importance measures.
 
 This is illustrated in a simple simulation. I fit a random forest using 5 completely random predictors of increasing cardinality. While none of the predictors is useful for prediction, variable importance measures are higher for the predictors with more factor levels!
 
