@@ -1,6 +1,6 @@
 # Cardinality_Bias_in_Random_Forests
 
-[Strobl *et al*. (2007)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-25) report bias in variable importance measures for random forests. Namely, trees are more likely to select factors with more factor levels during node splitting, even when the factors are equally important. As a result, factors with more factor levels (cardinality) tend to have higher variable importance measures.
+Strobl *et al*. (2007) report bias in variable importance measures for random forests. Namely, trees are more likely to select factors with more factor levels during node splitting, even when the factors are equally important. As a result, factors with more factor levels (cardinality) tend to have higher variable importance measures.
 
 This is illustrated in a simple simulation. I fit a random forest using 5 completely random predictors of increasing cardinality. While none of the predictors were useful in prediction, variable importance measures were higher for predictors with more factor levels.
 
