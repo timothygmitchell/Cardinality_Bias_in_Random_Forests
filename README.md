@@ -8,7 +8,7 @@ This cardinality bias has been known in the literature since at least 2007, but 
 
 I found that for each simulation, model accuracy depended on the strength of the association between the response and the meaningful factor(s), even when bias was observed. In conclusion, cardinality bias does not seem to impact model accuracy. I suspect this has something to do with the regularizing properties of the bagging process. That is, the ensemble must smooth out the bias in the individual trees.
 
-Variable importance measures for factors have clear limitations. I was able to produce many simulations in which cardinality bias influenced variable importance measures, even in the presence of real associations.
+Variable importance measures for factors have obvious limitations. I was able to produce many simulations in which cardinality bias influenced variable importance measures, even in the presence of real associations.
 
 Citations:
 
